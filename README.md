@@ -284,7 +284,7 @@ npm install
 - 데이터 파일(`community.db*`)과 `node_modules`가 저장소에 포함될 수 있으니 `.gitignore` 설정을 권장합니다
 
 ---
-
+dltjwls8147-mint
 ## 📄 License
 
 MIT

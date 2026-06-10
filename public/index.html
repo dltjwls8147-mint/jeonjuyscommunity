@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="전주영생고등학교 학생 커뮤니티 - 자유로운 소통 공간" />
+  <meta name="theme-color" content="#3b82f6" />
+  <title>전주영생고등학교 커뮤니티</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<!-- ── 헤더 ── -->
+<header class="site-header">
+  <div class="header-inner">
+    <!-- 라수호 -->
+    <a href="/" class="logo" id="logo">
+      <img
+        class="logo-icon"
+        src="/assest/UJ-S9OlOozK3wxs48Mqo4CpxNEtGuLjcNEiha2yDyD4s4Z0Oi5NsBKh_D3TYJ2CvNO8suwd8-2c09PBWEFWegA%20(1).svg"
+        alt="전주영생고등학교 로고"
+      />
+      <div>
+        <strong>전주영생고등학교</strong>
+        <small>커뮤니티</small>
+      </div>
+    </a>
+    <nav class="header-nav" id="headerNav"></nav>
+    <div class="header-search">
+      <input id="searchInput" type="search" placeholder="글 검색" aria-label="글 검색" />
+      <button class="btn btn-secondary" id="searchButton" type="button">검색</button>
+    </div>
+    <div class="header-auth" id="headerAuth"></div>
+    <a class="btn btn-ghost chat-link" href="#/chat">💬 실시간 채팅</a>
+    <div class="header-actions">
+      <div class="dropdown-menu">
+        <button id="linksMenuBtn" class="links-menu-btn" title="링크">🔗 더보기 <span class="dropdown-arrow">▼</span></button>
+        <div class="dropdown-content" id="linksDropdown">
+          <a id="linkNeis" href="https://neisplus.kr/" target="_blank" class="dropdown-item">📱 나이스 플러스</a>
+          <a id="linkOfficial" href="https://school.jbedu.kr/jjys/" target="_blank" class="dropdown-item">🏫 공식 사이트</a>
+          <a id="linkRiro" href="https://youngsaeng.riroschool.kr/" target="_blank" class="dropdown-item">📚 리로스쿨</a>
+          <button id="openGameBtn" class="dropdown-item game-item" title="미니게임 플레이">🎮 미니게임</button>
+          <button id="langBtn" class="dropdown-item" title="언어 지원">🌐 언어 지원</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ── 메인 ── -->
+<main class="container" id="app"></main>
+
+<!-- ── 푸터 ── -->
+<footer class="site-footer">
+  <p>전주영생고등학교 커뮤니티 &copy; 2026 | 비공식 학생 커뮤니티</p>
+</footer>
+
+<div id="catModal" class="cat-modal hidden" role="dialog" aria-modal="true" aria-label="고양이 사진 보기 화면">
+  <div class="cat-modal-backdrop" id="catModalBackdrop"></div>
+  <div class="cat-modal-card">
+    <button id="closeCatModal" class="cat-modal-close" type="button" aria-label="닫기">✕</button>
+    <div class="cat-modal-body">
+      <img id="catImage" src="" alt="고양이 사진" />
+    </div>
+  </div>
+</div>
+
+<script src="/app.js"></script>
+<script src="/game.js"></script>
+</body>
+</html>

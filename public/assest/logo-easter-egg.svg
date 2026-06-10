@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 498" role="img" aria-labelledby="title desc">
+  <title id="title">Logo easter egg image</title>
+  <desc id="desc">A small fuzzy curled cat-like shape inspired by the provided easter egg image.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="44%" r="66%">
+      <stop offset="0" stop-color="#f4f7f0"/>
+      <stop offset="1" stop-color="#e8eee7"/>
+    </radialGradient>
+    <radialGradient id="fur" cx="58%" cy="40%" r="64%">
+      <stop offset="0" stop-color="#5a5438"/>
+      <stop offset="0.38" stop-color="#35311f"/>
+      <stop offset="0.72" stop-color="#1f2317"/>
+      <stop offset="1" stop-color="#0e120d"/>
+    </radialGradient>
+    <radialGradient id="face" cx="56%" cy="34%" r="38%">
+      <stop offset="0" stop-color="#6f6948" stop-opacity="0.9"/>
+      <stop offset="0.58" stop-color="#3a3925" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#15180f" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soften" x="-18%" y="-18%" width="136%" height="136%">
+      <feGaussianBlur stdDeviation="2.8"/>
+      <feColorMatrix type="saturate" values="0.82"/>
+    </filter>
+    <filter id="grain" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence baseFrequency="0.9" numOctaves="2" seed="14" type="fractalNoise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08"/>
+      </feComponentTransfer>
+      <feBlend mode="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="512" height="498" fill="url(#bg)"/>
+  <g filter="url(#soften)">
+    <path fill="url(#fur)" d="M136 258c-17-53-3-103 38-136 34-27 76-28 118-20 31 6 62 9 94 4 25-4 54-14 75-3 12 6 8 23-3 38-12 16-29 27-40 43-15 23-16 52-25 78-18 54-59 94-115 105-61 13-121 4-169-36-23-19-34-46-43-73z"/>
+    <path fill="#14160f" opacity="0.75" d="M127 267c-13-39-8-78 11-109-25 24-39 59-36 99 5 56 45 101 96 120 47 18 116 12 160-16-52 13-112 3-157-19-36-18-63-39-74-75z"/>
+    <path fill="url(#face)" d="M278 124c42-1 82 1 122-12 22-8 42-14 52-6 6 5 1 17-12 30-23 22-44 39-51 72-10 47-28 75-65 89-31 13-71 7-98-13-33-26-46-68-33-105 13-39 44-54 85-55z"/>
+    <path fill="#7d7553" opacity="0.28" d="M204 156c-43 24-62 70-55 113 6 37 32 64 62 82-20-34-29-76-23-113 5-31 18-56 16-82z"/>
+    <path fill="#0b0d08" opacity="0.55" d="M358 160c16-2 35 2 49 14 13 12 14 31 8 48-5 15-17 27-32 30 10-25 2-55-25-92z"/>
+    <path fill="#1b1d12" opacity="0.9" d="M279 196c16-16 47-16 66-3 23 15 31 42 21 65-12 28-49 40-78 26-34-17-38-59-9-88z"/>
+    <path fill="#817957" opacity="0.34" d="M298 136c30 2 55 15 71 38-33-11-67-13-102-2 3-23 11-34 31-36z"/>
+    <path fill="#0a0c08" opacity="0.82" d="M163 276c33 26 86 39 133 29 31-6 58-19 76-41-8 46-50 84-105 92-50 8-93-9-104-80z"/>
+  </g>
+  <g filter="url(#grain)" opacity="0.8">
+    <ellipse cx="264" cy="238" rx="171" ry="139" fill="transparent"/>
+  </g>
+</svg>
